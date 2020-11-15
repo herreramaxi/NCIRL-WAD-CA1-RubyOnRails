@@ -1,0 +1,22 @@
+<div class="container">
+<h1>Products</h1>
+    <br />
+    <div class="row">
+        <div class="col-md-2">
+            <input class="form-control" id="searchField" type="search" placeholder="Search" aria-label="Search">
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div class="row">
+        <div class="col-md-9">
+            <div id="tableOuput" class="container">
+                <%= raw(@transform) %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%= javascript_pack_tag 'products.js' %>
